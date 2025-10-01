@@ -1,0 +1,16 @@
+import FWCore.ParameterSet.Config as cms
+
+from ..modules.hltIter3IterL3FromL1MuonClustersRefRemoval_cfi import *
+from ..modules.hltIter3IterL3FromL1MuonMaskedMeasurementTrackerEvent_cfi import *
+from ..modules.hltIter3IterL3FromL1MuonPixelLayersAndRegions_cfi import *
+from ..modules.hltIter3IterL3FromL1MuonTrackingRegions_cfi import *
+from ..modules.hltIter3IterL3FromL1MuonPixelClusterCheck_cfi import *
+from ..modules.hltIter3IterL3FromL1MuonPixelHitDoublets_cfi import *
+from ..modules.hltIter3IterL3FromL1MuonPixelSeeds_cfi import *
+from ..modules.hltIter3IterL3FromL1MuonPixelSeedsFiltered_cfi import *
+from ..modules.hltIter3IterL3FromL1MuonCkfTrackCandidates_cfi import *
+from ..modules.hltIter3IterL3FromL1MuonCtfWithMaterialTracks_cfi import *
+from ..modules.hltIter3IterL3FromL1MuonTrackCutClassifier_cfi import *
+from ..modules.hltIter3IterL3FromL1MuonTrackSelectionHighPurity_cfi import *
+
+HLTIterativeTrackingIteration3ForIterL3FromL1Muon = cms.Sequence( hltIter3IterL3FromL1MuonClustersRefRemoval + hltIter3IterL3FromL1MuonMaskedMeasurementTrackerEvent + hltIter3IterL3FromL1MuonPixelLayersAndRegions + hltIter3IterL3FromL1MuonTrackingRegions + hltIter3IterL3FromL1MuonPixelClusterCheck + hltIter3IterL3FromL1MuonPixelHitDoublets + hltIter3IterL3FromL1MuonPixelSeeds + hltIter3IterL3FromL1MuonPixelSeedsFiltered + hltIter3IterL3FromL1MuonCkfTrackCandidates + hltIter3IterL3FromL1MuonCtfWithMaterialTracks + hltIter3IterL3FromL1MuonTrackCutClassifier + hltIter3IterL3FromL1MuonTrackSelectionHighPurity )

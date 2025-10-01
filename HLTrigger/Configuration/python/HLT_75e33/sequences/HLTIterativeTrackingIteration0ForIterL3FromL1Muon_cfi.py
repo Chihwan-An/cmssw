@@ -1,0 +1,10 @@
+import FWCore.ParameterSet.Config as cms
+
+from ..modules.hltIter0IterL3FromL1MuonPixelSeedsFromPixelTracks_cfi import *
+from ..modules.hltIter0IterL3FromL1MuonPixelSeedsFromPixelTracksFiltered_cfi import *
+from ..modules.hltIter0IterL3FromL1MuonCkfTrackCandidates_cfi import *
+from ..modules.hltIter0IterL3FromL1MuonCtfWithMaterialTracks_cfi import *
+from ..modules.hltIter0IterL3FromL1MuonTrackCutClassifier_cfi import *
+from ..modules.hltIter0IterL3FromL1MuonTrackSelectionHighPurity_cfi import *
+
+HLTIterativeTrackingIteration0ForIterL3FromL1Muon = cms.Sequence( hltIter0IterL3FromL1MuonPixelSeedsFromPixelTracks + hltIter0IterL3FromL1MuonPixelSeedsFromPixelTracksFiltered + hltIter0IterL3FromL1MuonCkfTrackCandidates + hltIter0IterL3FromL1MuonCtfWithMaterialTracks + hltIter0IterL3FromL1MuonTrackCutClassifier + hltIter0IterL3FromL1MuonTrackSelectionHighPurity )

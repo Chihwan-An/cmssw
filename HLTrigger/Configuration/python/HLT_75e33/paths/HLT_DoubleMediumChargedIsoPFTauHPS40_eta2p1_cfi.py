@@ -19,8 +19,10 @@ from ..modules.hltL1SeedForDoublePuppiTau_cfi import *
 
 HLT_DoubleMediumChargedIsoPFTauHPS40_eta2p1 = cms.Path(
     HLTBeginSequence
+
     + hltL1SeedForDoublePuppiTau
     + hltPreDoublePFTauHPS
+    
     + HLTRawToDigiSequence
     + HLTHgcalLocalRecoSequence
     + HLTLocalrecoSequence

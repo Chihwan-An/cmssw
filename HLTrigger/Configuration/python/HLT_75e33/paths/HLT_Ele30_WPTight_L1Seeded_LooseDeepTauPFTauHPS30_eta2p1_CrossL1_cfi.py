@@ -54,13 +54,18 @@ from ..modules.hltEle30WPTightGsfTrackIsoL1SeededFilter_cfi import *
 
 HLT_Ele30_WPTight_L1Seeded_LooseDeepTauPFTauHPS30_eta2p1_CrossL1 = cms.Path( 
     HLTBeginSequence +
+
     hltPuppiTauTkIsoEle45_22L1TkFilter +
+
     HLTRawToDigiSequence +
     HLTHgcalLocalRecoSequence +
     HLTLocalrecoSequence +
+
     HLTDoFullUnpackingEgammaEcalL1SeededSequence +
     HLTPFClusteringForEgammaL1SeededSequence +
+
     HLTHgcalTiclPFClusteringForEgammaL1SeededSequence +
+
     hltEgammaCandidatesL1Seeded +
     hltEgammaCandidatesWrapperL1Seeded +
     hltEG30EtL1SeededFilter + 
@@ -92,11 +97,15 @@ HLT_Ele30_WPTight_L1Seeded_LooseDeepTauPFTauHPS30_eta2p1_CrossL1 = cms.Path(
     hltEle30WPTightBestGsfChi2L1SeededFilter + 
     hltEgammaEleL1TrkIsoL1Seeded + 
     hltEle30WPTightGsfTrackIsoFromL1TracksL1SeededFilter + 
+
     HLTTrackingSequence +
+
     hltEgammaEleGsfTrackIsoL1Seeded +
     hltEle30WPTightGsfTrackIsoL1SeededFilter + 
     HLTMuonsSequence +
+
     HLTParticleFlowSequence +
+    
     HLTAK4PFJetsReconstruction +
     hltAK4PFJetsForTaus +
     HLTPFTauHPS +

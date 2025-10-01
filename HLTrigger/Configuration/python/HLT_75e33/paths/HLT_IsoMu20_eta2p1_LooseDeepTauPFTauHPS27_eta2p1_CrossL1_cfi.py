@@ -34,15 +34,20 @@ from ..modules.hltPhase2L3MuonsTrkIsoRegionalNewdR0p3dRVeto0p005dz0p25dr0p20Chis
 HLT_IsoMu20_eta2p1_LooseDeepTauPFTauHPS27_eta2p1_CrossL1 = cms.Path(
     HLTBeginSequence
     + hltPuppiTauTkMuon4218L1TkFilter
+
     + HLTRawToDigiSequence
     + HLTHgcalLocalRecoSequence
     + HLTLocalrecoSequence
+
     + HLTTrackingSequence
+
     + HLTMuonsSequence
+
     + HLTParticleFlowSequence
     + hltParticleFlowRecHitECALUnseeded
     + hltParticleFlowClusterECALUncorrectedUnseeded
     + hltParticleFlowClusterECALUnseeded
+
     + hltFixedGridRhoFastjetAllCaloForEGamma
     + hltPhase2L3MuonCandidates
     + hltPhase2L3MuonsEcalIsodR0p3dRVeto0p000
@@ -55,11 +60,35 @@ HLT_IsoMu20_eta2p1_LooseDeepTauPFTauHPS27_eta2p1_CrossL1 = cms.Path(
     + HLTPhase2L3MuonGeneralTracksSequence
     + hltPhase2L3MuonsTrkIsoRegionalNewdR0p3dRVeto0p005dz0p25dr0p20ChisqInfPtMin0p0Cut0p07
     + hltL3crIsoL1TkSingleMu22TrkIsoRegionalNewFiltered0p07EcalHcalHgcalTrk
+    
     + HLTAK4PFJetsReconstruction
     + hltAK4PFJetsForTaus
+
     + HLTPFTauHPS
+
     + HLTHPSDeepTauPFTauSequence
     + hltHpsSelectedPFTauLooseTauWPDeepTau
     + hltHpsPFTau27LooseTauWPDeepTau
     + HLTEndSequence
+    
 )
+'''
+fragment.HLT_IsoMu20_eta2p1_LooseDeepTauPFTauHPS27_eta2p1_CrossL1_v12 = cms.Path(
+    fragment.HLTBeginSequence + 
+    fragment.hltL1sBigORMu18erTauXXer2p1 + 
+    fragment.hltPreIsoMu20eta2p1LooseDeepTauPFTauHPS27eta2p1CrossL1 + 
+    fragment.hltL1fL1sBigORMu18erTauXXer2p1L1Filtered0 + 
+    fragment.HLTL2muonrecoSequence + 
+    cms.ignore(fragment.hltL2fBigORMu18erTauXXer2p1L1f0L2Filtered10Q) + 
+    fragment.HLTL3muonrecoSequence + 
+    cms.ignore(fragment.hltL1fForIterL3L1fBigORMu18erTauXXer2p1L1Filtered0) + 
+    fragment.hltL3fL1BigORMu18erTauXXer2p1L1f0L2f10QL3Filtered20Q + 
+    fragment.HLTMu20Eta2p1Tau24Eta2p1IsolationSequence + 
+    fragment.hltL3crIsoBigORMu18erTauXXer2p1L1f0L2f10QL3f20QL3trkIsoFiltered + 
+    fragment.HLTGlobalPFTauHPSSequence + 
+    fragment.HLTHPSLooseMuTauWPDeepTauAntiMuonPFTau27Sequence + 
+    fragment.hltHpsL1JetsHLTPFTauLooseMutauWPDeepTauVsJetsAgainstMuonMatch + 
+    fragment.hltHpsSelectedPFTau27LooseMuTauWPDeepTauVsJetsAgainstMuonL1HLTMatched + 
+    fragment.hltHpsOverlapFilterIsoMu20LooseMuTauWPDeepTauPFTau27L1Seeded + 
+    fragment.HLTEndSequence )
+    '''

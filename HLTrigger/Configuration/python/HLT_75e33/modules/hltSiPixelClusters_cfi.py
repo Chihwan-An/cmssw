@@ -31,4 +31,3 @@ _hltSiPixelClusters = cms.EDProducer('SiPixelDigisClustersFromSoAAlpakaPhase2',
     produceDigis = cms.bool(False),
     storeDigis = cms.bool(False)
 )
-alpaka.toReplaceWith(hltSiPixelClusters, _hltSiPixelClusters)

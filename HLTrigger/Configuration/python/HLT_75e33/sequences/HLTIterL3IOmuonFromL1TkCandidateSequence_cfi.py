@@ -1,0 +1,7 @@
+import FWCore.ParameterSet.Config as cms
+
+from ..sequences.HLTRecopixelvertexingSequenceForIterL3FromL1Muon_cfi import *
+from ..sequences.HLTIterativeTrackingIteration0ForIterL3FromL1Muon_cfi import *
+from ..sequences.HLTIterativeTrackingIteration3ForIterL3FromL1Muon_cfi import *
+
+HLTIterL3IOmuonFromL1TkCandidateSequence = cms.Sequence( HLTRecopixelvertexingSequenceForIterL3FromL1Muon + HLTIterativeTrackingIteration0ForIterL3FromL1Muon + HLTIterativeTrackingIteration3ForIterL3FromL1Muon )

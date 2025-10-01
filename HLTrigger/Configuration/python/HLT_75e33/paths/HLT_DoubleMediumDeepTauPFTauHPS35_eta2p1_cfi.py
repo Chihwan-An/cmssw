@@ -21,11 +21,14 @@ HLT_DoubleMediumDeepTauPFTauHPS35_eta2p1 = cms.Path(
     HLTBeginSequence
     + hltL1SeedForDoublePuppiTau
     + hltPreDoublePFTauHPS
+
     + HLTRawToDigiSequence
     + HLTHgcalLocalRecoSequence
     + HLTLocalrecoSequence
     + HLTTrackingSequence
+
     + HLTMuonsSequence
+    
     + HLTParticleFlowSequence
     + HLTAK4PFJetsReconstruction
     + hltAK4PFJetsForTaus

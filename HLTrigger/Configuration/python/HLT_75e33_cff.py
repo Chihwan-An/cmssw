@@ -116,6 +116,7 @@ fragment.load("HLTrigger/Configuration/HLT_75e33/paths/HLT_Ele32_WPTight_Unseede
 fragment.load("HLTrigger/Configuration/HLT_75e33/paths/HLT_Ele30_WPTight_L1Seeded_LooseDeepTauPFTauHPS30_eta2p1_CrossL1_cfi")
 fragment.load("HLTrigger/Configuration/HLT_75e33/paths/HLT_IsoMu20_eta2p1_LooseDeepTauPFTauHPS27_eta2p1_CrossL1_cfi")
 fragment.load("HLTrigger/Configuration/HLT_75e33/paths/HLT_IsoMu24_FromL1TkMuon_cfi")
+fragment.load("HLTrigger/Configuration/HLT_75e33/paths/HLT_LooseDeepTauPFTauHPS180_L2NN_eta2p1_cfi")
 fragment.load("HLTrigger/Configuration/HLT_75e33/paths/HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_FromL1TkMuon_cfi")
 fragment.load("HLTrigger/Configuration/HLT_75e33/paths/HLT_Mu37_Mu27_FromL1TkMuon_cfi")
 fragment.load("HLTrigger/Configuration/HLT_75e33/paths/HLT_Mu50_FromL1TkMuon_cfi")
@@ -220,7 +221,28 @@ fragment.load("HLTrigger/Configuration/HLT_75e33/psets/tobTecStepInOutTrajectory
 fragment.load("HLTrigger/Configuration/HLT_75e33/psets/tobTecStepTrajectoryFilter_cfi")
 fragment.load("HLTrigger/Configuration/HLT_75e33/psets/TrajectoryFilterForConversions_cfi")
 fragment.load("HLTrigger/Configuration/HLT_75e33/psets/TrajectoryFilterForElectrons_cfi")
+fragment.load("HLTrigger/Configuration/HLT_75e33/psets/HLTIter2GroupedCkfTrajectoryBuilderIT_cfi")
+fragment.load("HLTrigger/Configuration/HLT_75e33/psets/HLTIter2PSetTrajectoryFilterIT_cfi")
+fragment.load("HLTrigger/Configuration/HLT_75e33/psets/HLTIter0IterL3FromL1MuonPSetGroupedCkfTrajectoryBuilderIT_cfi")
+fragment.load("HLTrigger/Configuration/HLT_75e33/psets/HLTIter0IterL3FromL1MuonGroupedCkfTrajectoryFilterIT_cfi")
+fragment.load("HLTrigger/Configuration/HLT_75e33/psets/HLTSeedFromProtoTracks_cfi")
+fragment.load("HLTrigger/Configuration/HLT_75e33/psets/HLTIter0IterL3MuonPSetGroupedCkfTrajectoryBuilderIT_cfi")
+fragment.load("HLTrigger/Configuration/HLT_75e33/psets/HLTIter0IterL3MuonGroupedCkfTrajectoryFilterIT_cfi")
 
+
+
+
+
+#fragment.load("HLTrigger/Configuration/HLT_75e33/sequences/HLTIterL3IOmuonTkCandidateSequence_cfi")
+#fragment.load("HLTrigger/Configuration/HLT_75e33/sequences/HLTL3muonrecoSequence_cfi")
+#fragment.load("HLTrigger/Configuration/HLT_75e33/sequences/HLTL2muonrecoNocandSequence_cfi")
+#fragment.load("HLTrigger/Configuration/HLT_75e33/sequences/HLTL2muonrecoSequence_cfi")
+#fragment.load("HLTrigger/Configuration/HLT_75e33/sequences/HLTGlobalPFTriggerSequenceForTau_cfi")
+fragment.load("HLTrigger/Configuration/HLT_75e33/sequences/HLTDoFullUnpackingEgammaEcalWithoutPreshowerSequence_cfi")
+fragment.load("HLTrigger/Configuration/HLT_75e33/sequences/HLTDoCaloSequence_cfi")
+fragment.load("HLTrigger/Configuration/HLT_75e33/sequences/HLTRecopixelvertexingSequence_cfi")  
+fragment.load("HLTrigger/Configuration/HLT_75e33/sequences/HLTRecoPixelTracksSequence_cfi")
+fragment.load("HLTrigger/Configuration/HLT_75e33/sequences/HLTL2TauTagNNSequence_cfi")
 fragment.load("HLTrigger/Configuration/HLT_75e33/sequences/HLTCalolocalrecoSequence_cfi")
 fragment.load("HLTrigger/Configuration/HLT_75e33/sequences/HLTCaloTowersRecSequence_cfi")
 fragment.load("HLTrigger/Configuration/HLT_75e33/sequences/HLTCsclocalrecoSequence_cfi")
@@ -321,6 +343,8 @@ fragment.load("HLTrigger/Configuration/HLT_75e33/services/DQMStore_cfi")
 fragment.load("HLTrigger/Configuration/HLT_75e33/services/FastTimerService_cfi")
 fragment.load("HLTrigger/Configuration/HLT_75e33/services/MessageLogger_cfi")
 fragment.load("HLTrigger/Configuration/HLT_75e33/services/ThroughputService_cfi")
+fragment.load("HLTrigger/Configuration/HLT_75e33/sequences/HLTIterL3MuonRecopixelvertexingSequence_cfi")
+fragment.load("HLTrigger/Configuration/HLT_75e33/psets/HLTPSetPvClusterComparerForIT_cfi")
 
 fragment.schedule = cms.Schedule(*[
 
@@ -359,6 +383,8 @@ fragment.schedule = cms.Schedule(*[
     fragment.HLT_DoubleMediumDeepTauPFTauHPS35_eta2p1,
     fragment.HLT_IsoMu20_eta2p1_LooseDeepTauPFTauHPS27_eta2p1_CrossL1,
     fragment.HLT_Ele30_WPTight_L1Seeded_LooseDeepTauPFTauHPS30_eta2p1_CrossL1,
+    fragment.HLT_LooseDeepTauPFTauHPS180_L2NN_eta2p1,
+    
     ### Removed temporarily until final decision on L1T tau Phase-2
     #fragment.L1T_DoubleNNTau52,
     #fragment.L1T_SingleNNTau150,

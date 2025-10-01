@@ -1,0 +1,22 @@
+grep: (standard input): binary file matches
+DIGI:pdigi_valid,L1TrackTrigger,L1,L1P2GT,DIGI2RAW,HLT:75e33,NANO:@Phase2HLT,ENDJOB
+We have determined that this is simulation (if not, rerun cmsDriver.py with --data)
+entry file:step1.root
+the query is file dataset = /RelValMinBias_14TeV/CMSSW_14_1_0-141X_mcRun4_realistic_v1_STD_RegeneratedGS_2026D110_noPU-v1/GEN-SIM
+DAS succeeded after 1 attempts 0
+found files:  ['/store/relval/CMSSW_14_1_0/RelValMinBias_14TeV/GEN-SIM/141X_mcRun4_realistic_v1_STD_RegeneratedGS_2026D110_noPU-v1/2580000/040dcdc7-6ea6-4ef9-bf3e-bf6575a033d9.root', '/store/relval/CMSSW_14_1_0/RelValMinBias_14TeV/GEN-SIM/141X_mcRun4_realistic_v1_STD_RegeneratedGS_2026D110_noPU-v1/2580000/09a4d033-f954-48a8-8ef0-6e4f0ec12aa6.root', '/store/relval/CMSSW_14_1_0/RelValMinBias_14TeV/GEN-SIM/141X_mcRun4_realistic_v1_STD_RegeneratedGS_2026D110_noPU-v1/2580000/44fb52e6-65c4-4b51-82cf-6c32528d27f0.root', '/store/relval/CMSSW_14_1_0/RelValMinBias_14TeV/GEN-SIM/141X_mcRun4_realistic_v1_STD_RegeneratedGS_2026D110_noPU-v1/2580000/5ce8f333-4f0f-4ff9-a2be-6e8222d198d8.root', '/store/relval/CMSSW_14_1_0/RelValMinBias_14TeV/GEN-SIM/141X_mcRun4_realistic_v1_STD_RegeneratedGS_2026D110_noPU-v1/2580000/60d921f4-da81-4e14-9610-932e30a920a3.root', '/store/relval/CMSSW_14_1_0/RelValMinBias_14TeV/GEN-SIM/141X_mcRun4_realistic_v1_STD_RegeneratedGS_2026D110_noPU-v1/2580000/94d74ef9-616a-420b-9669-6eeda4c71d4a.root', '/store/relval/CMSSW_14_1_0/RelValMinBias_14TeV/GEN-SIM/141X_mcRun4_realistic_v1_STD_RegeneratedGS_2026D110_noPU-v1/2580000/b3424ef2-5c7b-43a1-b7d8-02270db82ad7.root', '/store/relval/CMSSW_14_1_0/RelValMinBias_14TeV/GEN-SIM/141X_mcRun4_realistic_v1_STD_RegeneratedGS_2026D110_noPU-v1/2580000/cfc6c8ad-7a13-4676-8111-1ef765f393b6.root', '/store/relval/CMSSW_14_1_0/RelValMinBias_14TeV/GEN-SIM/141X_mcRun4_realistic_v1_STD_RegeneratedGS_2026D110_noPU-v1/2580000/e57f9a76-5eaf-4e5a-a0dc-d686e82076b2.root']
+Step: DIGI Spec: ['pdigi_valid']
+Step: L1TrackTrigger Spec: 
+Step: L1 Spec: 
+Step: L1P2GT Spec: 
+Loading P2GT menu from L1Trigger.Configuration.Phase2GTMenus.step1_2024
+Step: DIGI2RAW Spec: 
+Step: HLT Spec: ['75e33']
+Step: NANO Spec: ['@Phase2HLT']
+in prepare_nano @Phase2HLT
+@Phase2HLT
+NANO: scheduling: hltNanoProducer from HLTrigger/NGTScouting/HLTNanoProducer_cff
+Step: ENDJOB Spec: 
+customising the process with customizeHLTforMC from HLTrigger/Configuration/customizeHLTforMC
+customising the process with hltNanoCustomize from HLTrigger/NGTScouting/HLTNanoProducer_cff
+Config file step2_DIGI_L1TrackTrigger_L1_L1P2GT_DIGI2RAW_HLT_NANO_PU.py created

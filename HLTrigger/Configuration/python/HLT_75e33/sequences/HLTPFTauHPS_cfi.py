@@ -12,4 +12,15 @@ from ..modules.hltHpsTauPFJetsRecoTauChargedHadronsWithNeutrals_cfi import *
 from ..modules.hltPFTauPiZeros_cfi import *
 from ..modules.hltTauPFJets08Region_cfi import *
 
-HLTPFTauHPS = cms.Sequence(hltTauPFJets08Region+hltHpsTauPFJetsRecoTauChargedHadronsWithNeutrals+hltPFTauPiZeros+hltHpsCombinatoricRecoTaus+hltHpsSelectionDiscriminator+hltHpsPFTauProducerSansRefs+hltHpsPFTauProducer+hltHpsPFTauDiscriminationByDecayModeFindingNewDMs+hltHpsPFTauTrackFindingDiscriminator+hltHpsSelectedPFTausTrackFinding+hltHpsPFTauTrack)
+HLTPFTauHPS = cms.Sequence(
+    hltTauPFJets08Region+
+    hltHpsTauPFJetsRecoTauChargedHadronsWithNeutrals+
+    hltPFTauPiZeros+
+    hltHpsCombinatoricRecoTaus+
+    hltHpsSelectionDiscriminator+
+    hltHpsPFTauProducerSansRefs+
+    hltHpsPFTauProducer+
+    hltHpsPFTauDiscriminationByDecayModeFindingNewDMs+
+    hltHpsPFTauTrackFindingDiscriminator+
+    hltHpsSelectedPFTausTrackFinding+
+    hltHpsPFTauTrack)

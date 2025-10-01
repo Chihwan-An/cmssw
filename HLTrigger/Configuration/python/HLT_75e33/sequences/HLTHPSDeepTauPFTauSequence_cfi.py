@@ -9,4 +9,12 @@ from ..modules.hltHpsPFTauPrimaryVertexProducerForDeepTau_cfi import *
 from ..modules.hltHpsPFTauSecondaryVertexProducerForDeepTau_cfi import *
 from ..modules.hltHpsPFTauTransverseImpactParametersForDeepTau_cfi import *
 
-HLTHPSDeepTauPFTauSequence = cms.Sequence(hltHpsPFTauDiscriminationByDecayModeFindingNewDMs+hltHpsPFTauPrimaryVertexProducerForDeepTau+hltHpsPFTauSecondaryVertexProducerForDeepTau+hltHpsPFTauTransverseImpactParametersForDeepTau+hltFixedGridRhoFastjetAll+hltHpsPFTauBasicDiscriminatorsForDeepTau+hltHpsPFTauBasicDiscriminatorsdR03ForDeepTau+hltHpsPFTauDeepTauProducer)
+HLTHPSDeepTauPFTauSequence = cms.Sequence(
+    hltHpsPFTauDiscriminationByDecayModeFindingNewDMs+
+    hltHpsPFTauPrimaryVertexProducerForDeepTau+
+    hltHpsPFTauSecondaryVertexProducerForDeepTau+
+    hltHpsPFTauTransverseImpactParametersForDeepTau+
+    hltFixedGridRhoFastjetAll+
+    hltHpsPFTauBasicDiscriminatorsForDeepTau+
+    hltHpsPFTauBasicDiscriminatorsdR03ForDeepTau+
+    hltHpsPFTauDeepTauProducer)

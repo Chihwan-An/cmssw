@@ -1,0 +1,25 @@
+import FWCore.ParameterSet.Config as cms
+
+hltHbheRecoSoA = cms.EDProducer( "HBHERecHitProducerPortable@alpaka",
+    maxTimeSamples = cms.uint32( 10 ),
+    kprep1dChannelsPerBlock = cms.uint32( 32 ),
+    digisLabelF01HE = cms.InputTag( 'hltHcalDigisSoA','f01HEDigis' ),
+    digisLabelF5HB = cms.InputTag( 'hltHcalDigisSoA','f5HBDigis' ),
+    digisLabelF3HB = cms.InputTag( 'hltHcalDigisSoA','f3HBDigis' ),
+    recHitsLabelM0HBHE = cms.string( "" ),
+    sipmQTSShift = cms.int32( 0 ),
+    sipmQNTStoSum = cms.int32( 3 ),
+    firstSampleShift = cms.int32( 0 ),
+    useEffectivePedestals = cms.bool( True ),
+    meanTime = cms.double( 0.0 ),
+    timeSigmaSiPM = cms.double( 2.5 ),
+    timeSigmaHPD = cms.double( 5.0 ),
+    ts4Thresh = cms.double( 0.0 ),
+    applyTimeSlew = cms.bool( True ),
+    tzeroTimeSlewParameters = cms.vdouble( 23.960177, 11.977461, 9.109694 ),
+    slopeTimeSlewParameters = cms.vdouble( -3.178648, -1.5610227, -1.075824 ),
+    tmaxTimeSlewParameters = cms.vdouble( 16.0, 10.0, 6.25 ),
+    kernelMinimizeThreads = cms.vuint32( 16, 1, 1 ),
+    pulseOffsets = cms.vint32( -3, -2, -1, 0, 1, 2, 3, 4 ),
+    alpaka = cms.untracked.PSet(  backend = cms.untracked.string( "" ) )
+)
