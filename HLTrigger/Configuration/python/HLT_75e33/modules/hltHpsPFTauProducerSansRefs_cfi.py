@@ -1,4 +1,6 @@
 import FWCore.ParameterSet.Config as cms
+from HLTrigger.Configuration.HLT_75e33.modules.hltHpsSelectionDiscriminator_cfi import *
+from HLTrigger.Configuration.HLT_75e33.modules.hltHpsCombinatoricRecoTaus_cfi import *
 
 hltHpsPFTauProducerSansRefs = cms.EDProducer("RecoTauCleaner",
     cleaners = cms.VPSet(

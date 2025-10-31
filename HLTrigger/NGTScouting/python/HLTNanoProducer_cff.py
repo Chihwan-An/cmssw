@@ -15,6 +15,28 @@ from HLTrigger.NGTScouting.hltTaus_cfi import *
 from HLTrigger.NGTScouting.hltTracksters_cfi import *
 from HLTrigger.NGTScouting.hltTriggerAcceptFilter_cfi import hltTriggerAcceptFilter,dstTriggerAcceptFilter
 
+#from HLTrigger.Configuration.HLT_75e33.modules.hltHpsCombinatoricRecoTaus_cfi import *
+#from HLTrigger.Configuration.HLT_75e33.modules.hltHpsSelectionDiscriminator_cfi import *
+#from HLTrigger.Configuration.HLT_75e33.modules.hltHpsPFTauProducerSansRefs_cfi import *
+#from HLTrigger.Configuration.HLT_75e33.modules.hltHpsPFTauProducer_cfi import *
+#from HLTrigger.Configuration.HLT_75e33.modules.hltAK4PFJets_cfi import *
+#from HLTrigger.Configuration.HLT_75e33.modules.hltPfTICL_cfi import *
+#from HLTrigger.Configuration.HLT_75e33.modules.hltParticleFlowTmpBarrel_cfi import *
+#from HLTrigger.Configuration.HLT_75e33.modules.hltParticleFlowTmp_cfi import *
+#from HLTrigger.Configuration.HLT_75e33.modules.hltPhase2L3Muons_cfi import *
+#from HLTrigger.Configuration.HLT_75e33.modules.hltTiclTrackstersMerge_cfi import *
+#from HLTrigger.Configuration.HLT_75e33.modules.hltTiclCandidate_cfi import *
+
+
+#from PhysicsTools.NanoAOD.taus_cff import *
+#from PhysicsTools.NanoAOD.simpleCandidateFlatTableProducer_cfi import *
+#from PhysicsTools.NanoAOD.simpleGenParticleFlatTableProducer_cfi import *
+#from PhysicsTools.NanoAOD.simplePATTauFlatTableProducer_cfi import *
+#from PhysicsTools.JetMCAlgos.TauGenJets_cfi import * 
+#from PhysicsTools.JetMCAlgos.TauGenJetsDecayModeSelectorAllHadrons_cfi import *
+#from PhysicsTools.PatAlgos.patTauSignalCandidatesProducer_cfi import *
+
+
 hltNanoProducer = cms.Sequence(
     prunedGenParticles
     + finalGenParticles
@@ -30,7 +52,24 @@ hltNanoProducer = cms.Sequence(
     + hltMuonTable
     + hltPFCandidateTable
     + hltJetTable
+    
     + hltTrackstersTable
+
+    #+ hltTiclCandidate
+    #+ hltTiclTrackstersMerge
+    #+ hltPhase2L3Muons
+    #+ hltPfTICL
+    #+ hltParticleFlowTmpBarrel
+    #+ hltParticleFlowTmp
+    #+ hltAK4PFJets
+    #+ hltHpsCombinatoricRecoTaus
+    #+ hltHpsSelectionDiscriminator
+    #+ hltHpsPFTauProducerSansRefs
+    #+ hltHpsPFTauProducer
+    + hltTauTable
+
+    #+ genVisTauTable
+    #+ tauMCTable
 )
 
 dstNanoProducer = cms.Sequence(
@@ -48,8 +87,22 @@ dstNanoProducer = cms.Sequence(
     + hltMuonTable
     + hltPFCandidateTable
     + hltJetTable
-    + hltTauTable
     + hltTrackstersTable
+    
+    #+ hltTiclCandidate
+    #+ hltTiclTrackstersMerge
+    #+ hltPhase2L3Muons
+    #+ hltPfTICL
+    #+ hltParticleFlowTmpBarrel
+    #+ hltParticleFlowTmp
+    #+ hltAK4PFJets
+    #+ hltHpsCombinatoricRecoTaus
+    #+ hltHpsSelectionDiscriminator
+    #+ hltHpsPFTauProducerSansRefs
+    #+ hltHpsPFTauProducer
+    + hltTauTable
+    #+ genVisTauTable
+    #+ tauMCTable
 )
 
 def hltNanoCustomize(process):

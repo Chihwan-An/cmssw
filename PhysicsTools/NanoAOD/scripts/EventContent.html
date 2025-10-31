@@ -1,0 +1,365 @@
+
+    <html>
+    <head>
+        <title>Documentation for step2_nanoaod.root </title>
+        <link rel="stylesheet" type="text/css" href="https://cms-nanoaod-integration.web.cern.ch/patsize.css" />
+    </head>
+    <body>
+    
+        <h1>Events Content</h1>
+        <table>
+        <tr class='header'><th>Collection</th><th>Description</th></tr>
+<th><a href='#Flag'>Flag</a></th><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th><a href='#GenPart'>GenPart</a></th><td style='text-align : left;'>interesting gen particles </td></tr>
+<th><a href='#HLT'>HLT</a></th><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th><a href='#HLTriggerFinalPath'>HLTriggerFinalPath</a></th><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th><a href='#L1T'>L1T</a></th><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th><a href='#L1TrackTrigger'>L1TrackTrigger</a></th><td style='text-align : left;'>Trigger/flag bit (process: L1TrackTrigger)</td></tr>
+<th><a href='#L1simulation'>L1simulation</a></th><td style='text-align : left;'>Trigger/flag bit (process: L1TrackTrigger)</td></tr>
+<th><a href='#bunchCrossing'>bunchCrossing</a></th><td style='text-align : left;'>bunchCrossing/i</td></tr>
+<th><a href='#event'>event</a></th><td style='text-align : left;'>event/l</td></tr>
+<th><a href='#hltAK4PuppiJet'>hltAK4PuppiJet</a></th><td style='text-align : left;'>HLT PUPPI jets information</td></tr>
+<th><a href='#hltElectron'>hltElectron</a></th><td style='text-align : left;'>HLT Electron information</td></tr>
+<th><a href='#hltGeneralTrack'>hltGeneralTrack</a></th><td style='text-align : left;'>HLT General Track information</td></tr>
+<th><a href='#hltMuon'>hltMuon</a></th><td style='text-align : left;'>HLT Muon information</td></tr>
+<th><a href='#hltPFCandidate'>hltPFCandidate</a></th><td style='text-align : left;'>HLT PF information</td></tr>
+<th><a href='#hltPhoton'>hltPhoton</a></th><td style='text-align : left;'>HLT Photon information</td></tr>
+<th><a href='#hltPixelTrack'>hltPixelTrack</a></th><td style='text-align : left;'>HLT Pixel Track information</td></tr>
+<th><a href='#hltPrimaryVertex'>hltPrimaryVertex</a></th><td style='text-align : left;'>wheter the primary vertex passes selection: !isFake && ndof >= 4.0 && abs(z) <= 24.0 && abs(position.Rho) <= 2.0)</td></tr>
+<th><a href='#luminosityBlock'>luminosityBlock</a></th><td style='text-align : left;'>luminosityBlock/i</td></tr>
+<th><a href='#orbitNumber'>orbitNumber</a></th><td style='text-align : left;'>orbitNumber/i</td></tr>
+<th><a href='#run'>run</a></th><td style='text-align : left;'>run/i</td></tr>
+<th><a href='#tracksters'>tracksters</a></th><td style='text-align : left;'>HLT Merged Tracksters</td></tr>
+<th><a href='#vertices'>vertices</a></th><td style='text-align : left;'>Vertex properties</td></tr>
+</table>
+
+<h1>Events detail</h1>
+<h2><a name='Flag' id='Flag'>Flag</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>Flag_BadChargedCandidateFilter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_BadChargedCandidateSummer16Filter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_BadPFMuonDzFilter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_BadPFMuonFilter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_BadPFMuonSummer16Filter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_CSCTightHalo2015Filter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_CSCTightHaloFilter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_CSCTightHaloTrkMuUnvetoFilter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_EcalDeadCellBoundaryEnergyFilter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_EcalDeadCellTriggerPrimitiveFilter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_HBHENoiseFilter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_HBHENoiseIsoFilter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_HcalStripHaloFilter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_METFilters</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_chargedHadronTrackResolutionFilter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_ecalBadCalibFilter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_ecalLaserCorrFilter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_eeBadScFilter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_globalSuperTightHalo2016Filter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_globalTightHalo2016Filter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_goodVertices</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_hcalLaserEventFilter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_hfNoisyHitsFilter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_muonBadTrackFilter</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_trkPOGFilters</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_trkPOG_logErrorTooManyClusters</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_trkPOG_manystripclus53X</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+<th>Flag_trkPOG_toomanystripclus53X</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: RECO)</td></tr>
+</table>
+<h2><a name='GenPart' id='GenPart'>GenPart</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>GenPart_eta</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>eta</td></tr>
+<th>GenPart_genPartIdxMother</th><td style='text-align : left;'>Short_t(index to Genpart)</td><td style='text-align : left;'>index of the mother particle</td></tr>
+<th>GenPart_mass</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>Mass stored for all particles with the exception of quarks (except top), leptons/neutrinos, photons with mass < 1 GeV, gluons, pi0(111), pi+(211), D0(421), and D+(411). For these particles, you can lookup the value from PDG.</td></tr>
+<th>GenPart_pdgId</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>PDG id</td></tr>
+<th>GenPart_phi</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>phi</td></tr>
+<th>GenPart_pt</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>pt</td></tr>
+<th>GenPart_status</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>Particle status. 1=stable</td></tr>
+<th>GenPart_statusFlags</th><td style='text-align : left;'>UShort_t</td><td style='text-align : left;'>gen status flags stored bitwise, bits are: 0 : isPrompt, 1 : isDecayedLeptonHadron, 2 : isTauDecayProduct, 3 : isPromptTauDecayProduct, 4 : isDirectTauDecayProduct, 5 : isDirectPromptTauDecayProduct, 6 : isDirectHadronDecayProduct, 7 : isHardProcess, 8 : fromHardProcess, 9 : isHardProcessTauDecayProduct, 10 : isDirectHardProcessTauDecayProduct, 11 : fromHardProcessBeforeFSR, 12 : isFirstCopy, 13 : isLastCopy, 14 : isLastCopyBeforeFSR, </td></tr>
+<th>nGenPart</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>interesting gen particles </td></tr>
+</table>
+<h2><a name='HLT' id='HLT'>HLT</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>HLT_AK4PFPuppiJet520</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_AK4PFPuppiJet520_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_Diphoton30_23_IsoCaloId_L1Seeded</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_Diphoton30_23_IsoCaloId_L1Seeded_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_Diphoton30_23_IsoCaloId_Unseeded</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_Diphoton30_23_IsoCaloId_Unseeded_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_DoubleEle23_12_Iso_L1Seeded</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_DoubleEle23_12_Iso_L1Seeded_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_DoubleEle25_CaloIdL_PMS2_L1Seeded</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_DoubleEle25_CaloIdL_PMS2_L1Seeded_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_DoubleEle25_CaloIdL_PMS2_Unseeded</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_DoubleEle25_CaloIdL_PMS2_Unseeded_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_DoubleMediumChargedIsoPFTauHPS40_eta2p1</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_DoubleMediumChargedIsoPFTauHPS40_eta2p1_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_DoubleMediumDeepTauPFTauHPS35_eta2p1</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_DoubleMediumDeepTauPFTauHPS35_eta2p1_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_DoublePFPuppiJets128_DoublePFPuppiBTagDeepCSV_2p4</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_DoublePFPuppiJets128_DoublePFPuppiBTagDeepCSV_2p4_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_DoublePFPuppiJets128_DoublePFPuppiBTagDeepFlavour_2p4</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_DoublePFPuppiJets128_DoublePFPuppiBTagDeepFlavour_2p4_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_Ele115_NonIso_L1Seeded</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_Ele115_NonIso_L1Seeded_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_Ele26_WP70_L1Seeded</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_Ele26_WP70_L1Seeded_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_Ele26_WP70_Unseeded</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_Ele26_WP70_Unseeded_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_Ele30_WPTight_L1Seeded_LooseDeepTauPFTauHPS30_eta2p1_CrossL1</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_Ele32_WPTight_L1Seeded</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_Ele32_WPTight_L1Seeded_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_Ele32_WPTight_Unseeded</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_Ele32_WPTight_Unseeded_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_IsoMu20_eta2p1_LooseDeepTauPFTauHPS27_eta2p1_CrossL1</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_IsoMu24_FromL1TkMuon</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_IsoMu24_FromL1TkMuon_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_LooseDeepTauPFTauHPS180_L2NN_eta2p1</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_FromL1TkMuon</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_FromL1TkMuon_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_Mu37_Mu27_FromL1TkMuon</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_Mu37_Mu27_FromL1TkMuon_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_Mu50_FromL1TkMuon</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_Mu50_FromL1TkMuon_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_PFHT200PT30_QuadPFPuppiJet_70_40_30_30_TriplePFPuppiBTagDeepCSV_2p4</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_PFHT200PT30_QuadPFPuppiJet_70_40_30_30_TriplePFPuppiBTagDeepFlavour_2p4</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_PFHT200PT30_QuadPFPuppiJet_70_40_30_30_TriplePFPuppiBTagDeepFlavour_2p4_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_PFHT330PT30_QuadPFPuppiJet_75_60_45_40_TriplePFPuppiBTagDeepCSV_2p4</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_PFHT330PT30_QuadPFPuppiJet_75_60_45_40_TriplePFPuppiBTagDeepFlavour_2p4</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_PFHT330PT30_QuadPFPuppiJet_75_60_45_40_TriplePFPuppiBTagDeepFlavour_2p4_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_PFPuppiHT1070</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_PFPuppiHT1070_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_PFPuppiMETTypeOne140_PFPuppiMHT140</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_PFPuppiMETTypeOne140_PFPuppiMHT140_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_Photon108EB_TightID_TightIso_L1Seeded</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_Photon108EB_TightID_TightIso_L1Seeded_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_Photon108EB_TightID_TightIso_Unseeded</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_Photon108EB_TightID_TightIso_Unseeded_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_Photon187_L1Seeded</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_Photon187_L1Seeded_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_Photon187_Unseeded</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_Photon187_Unseeded_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>HLT_TriMu_10_5_5_DZ_FromL1TkMuon</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLT_TriMu_10_5_5_DZ_FromL1TkMuon_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+</table>
+<h2><a name='HLTriggerFinalPath' id='HLTriggerFinalPath'>HLTriggerFinalPath</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>HLTriggerFinalPath</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLTX)</td></tr>
+<th>HLTriggerFinalPath_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+</table>
+<h2><a name='L1T' id='L1T'>L1T</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>L1T_DoublePFPuppiJets112_2p4_DEta1p6</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>L1T_DoubleTkMuon_15_7</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>L1T_PFHT400PT30_QuadPFPuppiJet_70_55_40_40_2p4</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>L1T_PFPuppiHT450off</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>L1T_PFPuppiMET220off</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>L1T_SinglePFPuppiJet230off</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>L1T_SingleTkMuon_22</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>L1T_TkEle25TkEle12</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>L1T_TkEle36</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>L1T_TkEm37TkEm24</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>L1T_TkEm51</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>L1T_TkIsoEle22TkEm12</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>L1T_TkIsoEle28</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>L1T_TkIsoEm22TkIsoEm12</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>L1T_TkIsoEm36</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+<th>L1T_TripleTkMuon_5_3_3</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+</table>
+<h2><a name='L1TrackTrigger' id='L1TrackTrigger'>L1TrackTrigger</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>L1TrackTrigger_step</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: L1TrackTrigger)</td></tr>
+<th>L1TrackTrigger_step_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+</table>
+<h2><a name='L1simulation' id='L1simulation'>L1simulation</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>L1simulation_step</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: L1TrackTrigger)</td></tr>
+<th>L1simulation_step_pHLT</th><td style='text-align : left;'>Bool_t</td><td style='text-align : left;'>Trigger/flag bit (process: HLT)</td></tr>
+</table>
+<h2><a name='bunchCrossing' id='bunchCrossing'>bunchCrossing</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>bunchCrossing</th><td style='text-align : left;'>UInt_t</td><td style='text-align : left;'>bunchCrossing/i</td></tr>
+</table>
+<h2><a name='event' id='event'>event</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>event</th><td style='text-align : left;'>ULong64_t</td><td style='text-align : left;'>event/l</td></tr>
+</table>
+<h2><a name='hltAK4PuppiJet' id='hltAK4PuppiJet'>hltAK4PuppiJet</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>hltAK4PuppiJet_DeepFlavour_prob_b</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>DeepFlavour probability of b</td></tr>
+<th>hltAK4PuppiJet_DeepFlavour_prob_bb</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>DeepFlavour probability of bb</td></tr>
+<th>hltAK4PuppiJet_DeepFlavour_prob_c</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>DeepFlavour probability of c</td></tr>
+<th>hltAK4PuppiJet_DeepFlavour_prob_g</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>DeepFlavour probability of g</td></tr>
+<th>hltAK4PuppiJet_DeepFlavour_prob_lepb</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>DeepFlavour probability of lepb</td></tr>
+<th>hltAK4PuppiJet_DeepFlavour_prob_uds</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>DeepFlavour probability of uds</td></tr>
+<th>hltAK4PuppiJet_area</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>jet catchment area, for JECs</td></tr>
+<th>hltAK4PuppiJet_chEmEF</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>charged Electromagnetic Energy Fraction</td></tr>
+<th>hltAK4PuppiJet_chHEF</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>charged Hadron Energy Fraction</td></tr>
+<th>hltAK4PuppiJet_eta</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>eta</td></tr>
+<th>hltAK4PuppiJet_mass</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>mass</td></tr>
+<th>hltAK4PuppiJet_muEF</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>muon Energy Fraction</td></tr>
+<th>hltAK4PuppiJet_nCh</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>number of charged hadrons in the jet</td></tr>
+<th>hltAK4PuppiJet_nConstituents</th><td style='text-align : left;'>UChar_t</td><td style='text-align : left;'>number of particles in the jet</td></tr>
+<th>hltAK4PuppiJet_nElectrons</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>number of electrons in the jet</td></tr>
+<th>hltAK4PuppiJet_nMuons</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>number of muons in the jet</td></tr>
+<th>hltAK4PuppiJet_nNh</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>number of neutral hadrons in the jet</td></tr>
+<th>hltAK4PuppiJet_nPhotons</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>number of photons in the jet</td></tr>
+<th>hltAK4PuppiJet_neEmEF</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>neutral Electromagnetic Energy Fraction</td></tr>
+<th>hltAK4PuppiJet_neHEF</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>neutral Hadron Energy Fraction</td></tr>
+<th>hltAK4PuppiJet_phi</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>phi</td></tr>
+<th>hltAK4PuppiJet_pt</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>pt</td></tr>
+<th>nhltAK4PuppiJet</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>HLT PUPPI jets information</td></tr>
+</table>
+<h2><a name='hltElectron' id='hltElectron'>hltElectron</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>hltElectron_dEtaIn</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>#Delta#eta(SC seed, track pixel seed)</td></tr>
+<th>hltElectron_dPhiIn</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>#Delta#phi(SC seed, track pixel seed)</td></tr>
+<th>hltElectron_ecalIso</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>Isolation of SC in the ECAL</td></tr>
+<th>hltElectron_eta</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>SC eta</td></tr>
+<th>hltElectron_hOverE</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>Energy in HCAL / Energy in ECAL</td></tr>
+<th>hltElectron_hcalIso</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>Isolation of SC in the HCAL</td></tr>
+<th>hltElectron_m</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>SC mass</td></tr>
+<th>hltElectron_missingHits</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>missing hits in the tracker</td></tr>
+<th>hltElectron_ooEMOop</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>1/E(SC) - 1/p(track momentum)</td></tr>
+<th>hltElectron_phi</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>SC phi</td></tr>
+<th>hltElectron_pt</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>super-cluster (SC) pt</td></tr>
+<th>hltElectron_r9</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>ELectron SC r9 as defined in https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideEgammaShowerShape</td></tr>
+<th>hltElectron_sMaj</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>major moment of the SC shower shape</td></tr>
+<th>hltElectron_sMin</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>minor moment of the SC shower shape</td></tr>
+<th>hltElectron_seedId</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>ECAL ID of the SC seed</td></tr>
+<th>hltElectron_sigmaIetaIeta</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>sigmaIetaIeta of the SC, calculated with full 5x5 region, noise cleaned</td></tr>
+<th>hltElectron_trackIso</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>Isolation of electron track in the tracker</td></tr>
+<th>nhltElectron</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>HLT Electron information</td></tr>
+</table>
+<h2><a name='hltGeneralTrack' id='hltGeneralTrack'>hltGeneralTrack</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>hltGeneralTrack_dXY</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>dXY (cm)</td></tr>
+<th>hltGeneralTrack_dZ</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>dZ (cm)</td></tr>
+<th>hltGeneralTrack_eta</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>#eta</td></tr>
+<th>hltGeneralTrack_nMuHits</th><td style='text-align : left;'>Short_t</td><td style='text-align : left;'>hitPattern().numberOfValidMuonHits()</td></tr>
+<th>hltGeneralTrack_nPixelHits</th><td style='text-align : left;'>Short_t</td><td style='text-align : left;'>hitPattern().numberOfValidPixelHits()</td></tr>
+<th>hltGeneralTrack_nTrkLays</th><td style='text-align : left;'>Short_t</td><td style='text-align : left;'>hitPattern().trackerLayersWithMeasurement()</td></tr>
+<th>hltGeneralTrack_phi</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>#phi (rad)</td></tr>
+<th>hltGeneralTrack_pt</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>p_T (GeV)</td></tr>
+<th>hltGeneralTrack_t0</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>t0 (ns)</td></tr>
+<th>nhltGeneralTrack</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>HLT General Track information</td></tr>
+</table>
+<h2><a name='hltMuon' id='hltMuon'>hltMuon</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>hltMuon_dXY</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>dXY (cm)</td></tr>
+<th>hltMuon_dZ</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>dZ (cm)</td></tr>
+<th>hltMuon_eta</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>#eta</td></tr>
+<th>hltMuon_nMuHits</th><td style='text-align : left;'>Short_t</td><td style='text-align : left;'>hitPattern().numberOfValidMuonHits()</td></tr>
+<th>hltMuon_nPixelHits</th><td style='text-align : left;'>Short_t</td><td style='text-align : left;'>hitPattern().numberOfValidPixelHits()</td></tr>
+<th>hltMuon_nTrkLays</th><td style='text-align : left;'>Short_t</td><td style='text-align : left;'>hitPattern().trackerLayersWithMeasurement()</td></tr>
+<th>hltMuon_phi</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>#phi (rad)</td></tr>
+<th>hltMuon_pt</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>p_T (GeV)</td></tr>
+<th>hltMuon_t0</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>t0 (ns)</td></tr>
+<th>nhltMuon</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>HLT Muon information</td></tr>
+</table>
+<h2><a name='hltPFCandidate' id='hltPFCandidate'>hltPFCandidate</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>hltPFCandidate_charge</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>electric charge</td></tr>
+<th>hltPFCandidate_eta</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>eta</td></tr>
+<th>hltPFCandidate_mass</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>mass</td></tr>
+<th>hltPFCandidate_pdgId</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>PDG code assigned by the event reconstruction (not by MC truth)</td></tr>
+<th>hltPFCandidate_phi</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>phi</td></tr>
+<th>hltPFCandidate_pt</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>pt</td></tr>
+<th>hltPFCandidate_trackIndex</th><td style='text-align : left;'>UChar_t</td><td style='text-align : left;'>track index</td></tr>
+<th>nhltPFCandidate</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>HLT PF information</td></tr>
+</table>
+<h2><a name='hltPhoton' id='hltPhoton'>hltPhoton</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>hltPhoton_ecalIso</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>Isolation of SC in the ECAL</td></tr>
+<th>hltPhoton_eta</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>SC eta</td></tr>
+<th>hltPhoton_hOverE</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>Energy in HCAL / Energy in ECAL</td></tr>
+<th>hltPhoton_hcalIso</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>Isolation of SC in the HCAL</td></tr>
+<th>hltPhoton_m</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>SC mass</td></tr>
+<th>hltPhoton_phi</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>SC phi</td></tr>
+<th>hltPhoton_pt</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>super-cluster (SC) pt</td></tr>
+<th>hltPhoton_r9</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>Photon SC r9 as defined in https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideEgammaShowerShape</td></tr>
+<th>hltPhoton_sMaj</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>major moment of the SC shower shape</td></tr>
+<th>hltPhoton_sMin</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>minor moment of the SC shower shape</td></tr>
+<th>hltPhoton_seedId</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>ECAL ID of the SC seed</td></tr>
+<th>hltPhoton_sigmaIetaIeta</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>sigmaIetaIeta of the SC, calculated with full 5x5 region, noise cleaned</td></tr>
+<th>nhltPhoton</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>HLT Photon information</td></tr>
+</table>
+<h2><a name='hltPixelTrack' id='hltPixelTrack'>hltPixelTrack</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>hltPixelTrack_dXY</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>dXY (cm)</td></tr>
+<th>hltPixelTrack_dZ</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>dZ (cm)</td></tr>
+<th>hltPixelTrack_eta</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>#eta</td></tr>
+<th>hltPixelTrack_nMuHits</th><td style='text-align : left;'>Short_t</td><td style='text-align : left;'>hitPattern().numberOfValidMuonHits()</td></tr>
+<th>hltPixelTrack_nPixelHits</th><td style='text-align : left;'>Short_t</td><td style='text-align : left;'>hitPattern().numberOfValidPixelHits()</td></tr>
+<th>hltPixelTrack_nTrkLays</th><td style='text-align : left;'>Short_t</td><td style='text-align : left;'>hitPattern().trackerLayersWithMeasurement()</td></tr>
+<th>hltPixelTrack_phi</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>#phi (rad)</td></tr>
+<th>hltPixelTrack_pt</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>p_T (GeV)</td></tr>
+<th>hltPixelTrack_t0</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>t0 (ns)</td></tr>
+<th>nhltPixelTrack</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>HLT Pixel Track information</td></tr>
+</table>
+<h2><a name='hltPrimaryVertex' id='hltPrimaryVertex'>hltPrimaryVertex</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>hltPrimaryVertex_chi2</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>primary vertex reduced chi2</td></tr>
+<th>hltPrimaryVertex_isGood</th><td style='text-align : left;'>UChar_t</td><td style='text-align : left;'>wheter the primary vertex passes selection: !isFake && ndof >= 4.0 && abs(z) <= 24.0 && abs(position.Rho) <= 2.0)</td></tr>
+<th>hltPrimaryVertex_nTracks</th><td style='text-align : left;'>UChar_t</td><td style='text-align : left;'>primary vertex number of associated tracks</td></tr>
+<th>hltPrimaryVertex_ndof</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>primary vertex number of degrees of freedom</td></tr>
+<th>hltPrimaryVertex_score</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>primary vertex score, i.e. sum pt2 of clustered objects</td></tr>
+<th>hltPrimaryVertex_sumpt2</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>sum pt2 of pf charged candidates within dz=0.2 for the main primary vertex</td></tr>
+<th>hltPrimaryVertex_sumpx</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>sum px of pf charged candidates within dz=0.2 for the main primary vertex</td></tr>
+<th>hltPrimaryVertex_sumpy</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>sum py of pf charged candidates within dz=0.2 for the main primary vertex</td></tr>
+<th>hltPrimaryVertex_x</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>primary vertex x coordinate</td></tr>
+<th>hltPrimaryVertex_xError</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>primary vertex error in x coordinate</td></tr>
+<th>hltPrimaryVertex_y</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>primary vertex y coordinate</td></tr>
+<th>hltPrimaryVertex_yError</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>primary vertex error in y coordinate</td></tr>
+<th>hltPrimaryVertex_z</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>primary vertex z coordinate</td></tr>
+<th>hltPrimaryVertex_zError</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>primary vertex error in z coordinate</td></tr>
+</table>
+<h2><a name='luminosityBlock' id='luminosityBlock'>luminosityBlock</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>luminosityBlock</th><td style='text-align : left;'>UInt_t</td><td style='text-align : left;'>luminosityBlock/i</td></tr>
+</table>
+<h2><a name='orbitNumber' id='orbitNumber'>orbitNumber</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>orbitNumber</th><td style='text-align : left;'>UInt_t</td><td style='text-align : left;'>orbitNumber/i</td></tr>
+</table>
+<h2><a name='run' id='run'>run</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>run</th><td style='text-align : left;'>UInt_t</td><td style='text-align : left;'>run/i</td></tr>
+</table>
+<h2><a name='tracksters' id='tracksters'>tracksters</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>ntracksters</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>HLT Merged Tracksters</td></tr>
+<th>tracksters_nvertices</th><td style='text-align : left;'>UShort_t</td><td style='text-align : left;'>counts for vertices</td></tr>
+<th>tracksters_overtices</th><td style='text-align : left;'>UShort_t</td><td style='text-align : left;'>offsets for vertices</td></tr>
+<th>tracksters_raw_energy</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>Raw Energy of the trackster</td></tr>
+</table>
+<h2><a name='vertices' id='vertices'>vertices</a> <sup><a href="#top">[back to top]</a></sup></h2>
+<table>
+<tr class='header'><th>Object property</th><th>Type</th><th>Description</th></tr>
+<th>nvertices</th><td style='text-align : left;'>Int_t</td><td style='text-align : left;'>Vertex properties</td></tr>
+<th>vertices_vertex_mult</th><td style='text-align : left;'>Float_t</td><td style='text-align : left;'>Fraction of Layer cluster energy used by the Trackster.</td></tr>
+<th>vertices_vertices</th><td style='text-align : left;'>UInt_t</td><td style='text-align : left;'>Layer clusters indices.</td></tr>
+</table>
+
+    </body></html>
+    
